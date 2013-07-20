@@ -31,6 +31,23 @@ First lets define our sort descriptors
 	{
 	    return @[ [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES] ];
 	}
+	
+Also, lets's add a method to provide our cells for both datasources 
+**Note we use [weakSelf tableView] because the UISearchResultsController's tableView doesn't have its cell identifier's set
+
+	-(void)configureCellForDataSource:(SPXDatasource *)datasource
+	{
+	    id __weak weakSelf = self;
+
+	    [datasource setCellForRowAtIndexPathBlock:^
+	     UITableViewCell *(UITableView *tableView, id object, NSIndexPath *indexPath)
+	    {
+	        // we have to use self.tableView here since that's the tableView with its cell identifier's set
+	        UITableViewCell *cell = [[weakSelf tableView] dequeueReusableCellWithIdentifier:@"Cell"];
+	        cell.textLabel.text = [object valueForKey:@"name"];
+	        return cell;
+	    }];
+	}
 
 Next, lets define our main tableView datasource
 
@@ -39,7 +56,7 @@ Next, lets define our main tableView datasource
 	    // get a new coreData based datasource
 	    _coreDataSoure = [SPXCoreDataDatasource dataSourceForTableView:self.tableView
 	                                                           context:self.managedObjectContext
-	                                                        entityName:self.entityNam];
+	                                                        entityName:self.entityName];
 
 	    // configure its sortDescriptors
 	    [_coreDataSoure setSortDescriptors:[self sortDescriptors]];
@@ -85,3 +102,7 @@ Finally let's load everything up...
 	    [self configureCoreDataSource];
 	    [self configureSearchDataSource];
 	}
+	
+__Summary__
+
+Of course the search datasource may not be required at all, but you can see how little code is required in order to get this working and completely hooked up to CoreData :)
