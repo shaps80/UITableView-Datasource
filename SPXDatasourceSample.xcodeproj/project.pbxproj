@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5445F016179AC43D00DFC769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5445F015179AC43D00DFC769 /* UIKit.framework */; };
+		5445F018179AC43D00DFC769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5445F017179AC43D00DFC769 /* Foundation.framework */; };
+		5445F01A179AC43D00DFC769 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5445F019179AC43D00DFC769 /* CoreGraphics.framework */; };
+		5445F020179AC43D00DFC769 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5445F01E179AC43D00DFC769 /* InfoPlist.strings */; };
+		5445F022179AC43D00DFC769 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5445F021179AC43D00DFC769 /* main.m */; };
+		5445F026179AC43D00DFC769 /* SPXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5445F025179AC43D00DFC769 /* SPXAppDelegate.m */; };
+		5445F028179AC43D00DFC769 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5445F027179AC43D00DFC769 /* Default.png */; };
+		5445F02A179AC43D00DFC769 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5445F029179AC43D00DFC769 /* Default@2x.png */; };
+		5445F02C179AC43D00DFC769 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5445F02B179AC43D00DFC769 /* Default-568h@2x.png */; };
+		5445F02F179AC43D00DFC769 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5445F02D179AC43D00DFC769 /* MainStoryboard.storyboard */; };
+		5445F032179AC43D00DFC769 /* SPXMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5445F031179AC43D00DFC769 /* SPXMasterViewController.m */; };
+		5459D04D179AC4DF007C7D07 /* SPXCollectionDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D046179AC4DF007C7D07 /* SPXCollectionDatasource.m */; };
+		5459D04E179AC4DF007C7D07 /* SPXCoreDataDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D048179AC4DF007C7D07 /* SPXCoreDataDatasource.m */; };
+		5459D04F179AC4DF007C7D07 /* SPXDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D04A179AC4DF007C7D07 /* SPXDatasource.m */; };
+		5459D050179AC4DF007C7D07 /* SPXSearchDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D04C179AC4DF007C7D07 /* SPXSearchDatasource.m */; };
+		5459D053179AC540007C7D07 /* SPXStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D052179AC540007C7D07 /* SPXStoreManager.m */; };
+		5459D057179AC56C007C7D07 /* SPXCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D056179AC56C007C7D07 /* SPXCoreDataStore.m */; };
+		5459D05B179AC5A2007C7D07 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459D05A179AC5A2007C7D07 /* CoreData.framework */; };
+		5459D05F179AC6E4007C7D07 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5459D05D179AC6E4007C7D07 /* Model.xcdatamodeld */; };
+		54A5E06B179ACB370013456B /* SPXFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E06A179ACB370013456B /* SPXFetchRequest.m */; };
+		54A5E06E179ACBA40013456B /* SPXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E06D179ACBA40013456B /* SPXAlert.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5445F012179AC43D00DFC769 /* SPXDatasourceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPXDatasourceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5445F015179AC43D00DFC769 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5445F017179AC43D00DFC769 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5445F019179AC43D00DFC769 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5445F01D179AC43D00DFC769 /* SPXDatasourceSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPXDatasourceSample-Info.plist"; sourceTree = "<group>"; };
+		5445F01F179AC43D00DFC769 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5445F021179AC43D00DFC769 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5445F023179AC43D00DFC769 /* SPXDatasourceSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPXDatasourceSample-Prefix.pch"; sourceTree = "<group>"; };
+		5445F024179AC43D00DFC769 /* SPXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPXAppDelegate.h; sourceTree = "<group>"; };
+		5445F025179AC43D00DFC769 /* SPXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPXAppDelegate.m; sourceTree = "<group>"; };
+		5445F027179AC43D00DFC769 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5445F029179AC43D00DFC769 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5445F02B179AC43D00DFC769 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5445F02E179AC43D00DFC769 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5445F030179AC43D00DFC769 /* SPXMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPXMasterViewController.h; sourceTree = "<group>"; };
+		5445F031179AC43D00DFC769 /* SPXMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPXMasterViewController.m; sourceTree = "<group>"; };
+		5459D045179AC4DF007C7D07 /* SPXCollectionDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXCollectionDatasource.h; sourceTree = "<group>"; };
+		5459D046179AC4DF007C7D07 /* SPXCollectionDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXCollectionDatasource.m; sourceTree = "<group>"; };
+		5459D047179AC4DF007C7D07 /* SPXCoreDataDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXCoreDataDatasource.h; sourceTree = "<group>"; };
+		5459D048179AC4DF007C7D07 /* SPXCoreDataDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXCoreDataDatasource.m; sourceTree = "<group>"; };
+		5459D049179AC4DF007C7D07 /* SPXDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXDatasource.h; sourceTree = "<group>"; };
+		5459D04A179AC4DF007C7D07 /* SPXDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXDatasource.m; sourceTree = "<group>"; };
+		5459D04B179AC4DF007C7D07 /* SPXSearchDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXSearchDatasource.h; sourceTree = "<group>"; };
+		5459D04C179AC4DF007C7D07 /* SPXSearchDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXSearchDatasource.m; sourceTree = "<group>"; };
+		5459D051179AC540007C7D07 /* SPXStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXStoreManager.h; sourceTree = "<group>"; };
+		5459D052179AC540007C7D07 /* SPXStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXStoreManager.m; sourceTree = "<group>"; };
+		5459D054179AC55E007C7D07 /* SPXStoreDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXStoreDefines.h; sourceTree = "<group>"; };
+		5459D055179AC56C007C7D07 /* SPXCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXCoreDataStore.h; sourceTree = "<group>"; };
+		5459D056179AC56C007C7D07 /* SPXCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXCoreDataStore.m; sourceTree = "<group>"; };
+		5459D05A179AC5A2007C7D07 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5459D05C179AC5E4007C7D07 /* SPXDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXDefines.h; sourceTree = "<group>"; };
+		5459D05E179AC6E4007C7D07 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		54A5E069179ACB370013456B /* SPXFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXFetchRequest.h; sourceTree = "<group>"; };
+		54A5E06A179ACB370013456B /* SPXFetchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXFetchRequest.m; sourceTree = "<group>"; };
+		54A5E06C179ACBA40013456B /* SPXAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPXAlert.h; sourceTree = "<group>"; };
+		54A5E06D179ACBA40013456B /* SPXAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPXAlert.m; sourceTree = "<group>"; };
+		54A5E06F179ACBCE0013456B /* Snippex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snippex.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5445F00F179AC43D00DFC769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5459D05B179AC5A2007C7D07 /* CoreData.framework in Frameworks */,
+				5445F016179AC43D00DFC769 /* UIKit.framework in Frameworks */,
+				5445F018179AC43D00DFC769 /* Foundation.framework in Frameworks */,
+				5445F01A179AC43D00DFC769 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5445F009179AC43D00DFC769 = {
+			isa = PBXGroup;
+			children = (
+				5445F03B179AC44F00DFC769 /* Snippex */,
+				5445F01B179AC43D00DFC769 /* SPXDatasourceSample */,
+				5445F014179AC43D00DFC769 /* Frameworks */,
+				5445F013179AC43D00DFC769 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5445F013179AC43D00DFC769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5445F012179AC43D00DFC769 /* SPXDatasourceSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5445F014179AC43D00DFC769 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5459D05A179AC5A2007C7D07 /* CoreData.framework */,
+				5445F015179AC43D00DFC769 /* UIKit.framework */,
+				5445F017179AC43D00DFC769 /* Foundation.framework */,
+				5445F019179AC43D00DFC769 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5445F01B179AC43D00DFC769 /* SPXDatasourceSample */ = {
+			isa = PBXGroup;
+			children = (
+				5459D05D179AC6E4007C7D07 /* Model.xcdatamodeld */,
+				5445F02D179AC43D00DFC769 /* MainStoryboard.storyboard */,
+				5445F024179AC43D00DFC769 /* SPXAppDelegate.h */,
+				5445F025179AC43D00DFC769 /* SPXAppDelegate.m */,
+				5445F030179AC43D00DFC769 /* SPXMasterViewController.h */,
+				5445F031179AC43D00DFC769 /* SPXMasterViewController.m */,
+				5445F01C179AC43D00DFC769 /* Supporting Files */,
+			);
+			path = SPXDatasourceSample;
+			sourceTree = "<group>";
+		};
+		5445F01C179AC43D00DFC769 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5445F01D179AC43D00DFC769 /* SPXDatasourceSample-Info.plist */,
+				5445F01E179AC43D00DFC769 /* InfoPlist.strings */,
+				5445F021179AC43D00DFC769 /* main.m */,
+				5445F023179AC43D00DFC769 /* SPXDatasourceSample-Prefix.pch */,
+				5445F027179AC43D00DFC769 /* Default.png */,
+				5445F029179AC43D00DFC769 /* Default@2x.png */,
+				5445F02B179AC43D00DFC769 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5445F03B179AC44F00DFC769 /* Snippex */ = {
+			isa = PBXGroup;
+			children = (
+				54A5E06F179ACBCE0013456B /* Snippex.h */,
+				5459D05C179AC5E4007C7D07 /* SPXDefines.h */,
+				54A5E06C179ACBA40013456B /* SPXAlert.h */,
+				54A5E06D179ACBA40013456B /* SPXAlert.m */,
+				5459D058179AC571007C7D07 /* Store */,
+				5459D059179AC579007C7D07 /* Datasource */,
+			);
+			path = Snippex;
+			sourceTree = "<group>";
+		};
+		5459D058179AC571007C7D07 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5459D054179AC55E007C7D07 /* SPXStoreDefines.h */,
+				5459D055179AC56C007C7D07 /* SPXCoreDataStore.h */,
+				5459D056179AC56C007C7D07 /* SPXCoreDataStore.m */,
+				5459D051179AC540007C7D07 /* SPXStoreManager.h */,
+				5459D052179AC540007C7D07 /* SPXStoreManager.m */,
+				54A5E069179ACB370013456B /* SPXFetchRequest.h */,
+				54A5E06A179ACB370013456B /* SPXFetchRequest.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		5459D059179AC579007C7D07 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				5459D049179AC4DF007C7D07 /* SPXDatasource.h */,
+				5459D04A179AC4DF007C7D07 /* SPXDatasource.m */,
+				5459D045179AC4DF007C7D07 /* SPXCollectionDatasource.h */,
+				5459D046179AC4DF007C7D07 /* SPXCollectionDatasource.m */,
+				5459D047179AC4DF007C7D07 /* SPXCoreDataDatasource.h */,
+				5459D048179AC4DF007C7D07 /* SPXCoreDataDatasource.m */,
+				5459D04B179AC4DF007C7D07 /* SPXSearchDatasource.h */,
+				5459D04C179AC4DF007C7D07 /* SPXSearchDatasource.m */,
+			);
+			name = Datasource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5445F011179AC43D00DFC769 /* SPXDatasourceSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5445F038179AC43D00DFC769 /* Build configuration list for PBXNativeTarget "SPXDatasourceSample" */;
+			buildPhases = (
+				5445F00E179AC43D00DFC769 /* Sources */,
+				5445F00F179AC43D00DFC769 /* Frameworks */,
+				5445F010179AC43D00DFC769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPXDatasourceSample;
+			productName = SPXDatasourceSample;
+			productReference = 5445F012179AC43D00DFC769 /* SPXDatasourceSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5445F00A179AC43D00DFC769 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPX;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Snippex;
+			};
+			buildConfigurationList = 5445F00D179AC43D00DFC769 /* Build configuration list for PBXProject "SPXDatasourceSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5445F009179AC43D00DFC769;
+			productRefGroup = 5445F013179AC43D00DFC769 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5445F011179AC43D00DFC769 /* SPXDatasourceSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5445F010179AC43D00DFC769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5445F020179AC43D00DFC769 /* InfoPlist.strings in Resources */,
+				5445F028179AC43D00DFC769 /* Default.png in Resources */,
+				5445F02A179AC43D00DFC769 /* Default@2x.png in Resources */,
+				5445F02C179AC43D00DFC769 /* Default-568h@2x.png in Resources */,
+				5445F02F179AC43D00DFC769 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5445F00E179AC43D00DFC769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5459D057179AC56C007C7D07 /* SPXCoreDataStore.m in Sources */,
+				5445F022179AC43D00DFC769 /* main.m in Sources */,
+				5445F026179AC43D00DFC769 /* SPXAppDelegate.m in Sources */,
+				5445F032179AC43D00DFC769 /* SPXMasterViewController.m in Sources */,
+				5459D04F179AC4DF007C7D07 /* SPXDatasource.m in Sources */,
+				5459D050179AC4DF007C7D07 /* SPXSearchDatasource.m in Sources */,
+				5459D053179AC540007C7D07 /* SPXStoreManager.m in Sources */,
+				5459D05F179AC6E4007C7D07 /* Model.xcdatamodeld in Sources */,
+				5459D04D179AC4DF007C7D07 /* SPXCollectionDatasource.m in Sources */,
+				5459D04E179AC4DF007C7D07 /* SPXCoreDataDatasource.m in Sources */,
+				54A5E06B179ACB370013456B /* SPXFetchRequest.m in Sources */,
+				54A5E06E179ACBA40013456B /* SPXAlert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5445F01E179AC43D00DFC769 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5445F01F179AC43D00DFC769 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5445F02D179AC43D00DFC769 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5445F02E179AC43D00DFC769 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5445F036179AC43D00DFC769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5445F037179AC43D00DFC769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5445F039179AC43D00DFC769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPXDatasourceSample/SPXDatasourceSample-Prefix.pch";
+				INFOPLIST_FILE = "SPXDatasourceSample/SPXDatasourceSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5445F03A179AC43D00DFC769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPXDatasourceSample/SPXDatasourceSample-Prefix.pch";
+				INFOPLIST_FILE = "SPXDatasourceSample/SPXDatasourceSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5445F00D179AC43D00DFC769 /* Build configuration list for PBXProject "SPXDatasourceSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5445F036179AC43D00DFC769 /* Debug */,
+				5445F037179AC43D00DFC769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5445F038179AC43D00DFC769 /* Build configuration list for PBXNativeTarget "SPXDatasourceSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5445F039179AC43D00DFC769 /* Debug */,
+				5445F03A179AC43D00DFC769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5459D05D179AC6E4007C7D07 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5459D05E179AC6E4007C7D07 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5459D05E179AC6E4007C7D07 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5445F00A179AC43D00DFC769 /* Project object */;
+}
