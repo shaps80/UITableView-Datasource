@@ -22,3 +22,66 @@ Well, I wanted to be able to provide the cells and their config from the control
 For the search I needed a way to provide the source every time its presented, because the data may have changed since it was last loaded. This allows me to request the source in its current state right before display.
 
 The other useful block is the search one. This allow you to get a hold of the current searchString and provide your own predicate since I don’t know which field you want to search against. :)
+
+__Example__
+
+First lets define our sort descriptors
+
+	-(NSArray *)sortDescriptors
+	{
+	    return @[ [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES] ];
+	}
+
+Next, lets define our main tableView datasource
+
+	-(void)configureCoreDataSource
+	{
+	    // get a new coreData based datasource
+	    _coreDataSoure = [SPXCoreDataDatasource dataSourceForTableView:self.tableView
+	                                                           context:self.managedObjectContext
+	                                                        entityName:self.entityNam];
+
+	    // configure its sortDescriptors
+	    [_coreDataSoure setSortDescriptors:[self sortDescriptors]];
+
+	    // configure the cells for this datasource
+	    [self configureCellForDataSource:_coreDataSoure];
+	    [self.tableView setDataSource:_coreDataSoure];
+	}
+
+Now, let's define our search datasource
+
+	-(void)configureSearchDataSource
+	{
+	    // get a new search based datasource
+	    _searchDataSource = [SPXSearchDatasource dataSourceForSearchDisplayController:self.searchDisplayController];
+
+	    // configure its sortDescriptors
+	    [_searchDataSource setSortDescriptors:[self sortDescriptors]];
+
+	    id __weak weakSelf = self;
+	    [_searchDataSource setSourceWithBlock:^NSArray *
+	    {
+	        return [[weakSelf coreDataSoure] source];
+	    }];
+
+	    // configure how the search will be handled
+	    [_searchDataSource setSearchPredicate:^NSPredicate *(NSString *searchString)
+	    {
+	        return [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@", searchString];
+	    }];
+
+	    // configure the cells for this datasource
+	    [self configureCellForDataSource:_searchDataSource];
+	    [self.searchDisplayController setSearchResultsDataSource:_searchDataSource];
+	}
+	
+Finally let's load everything up...
+	
+	-(void)viewDidLoad
+	{
+	    [super viewDidLoad];
+
+	    [self configureCoreDataSource];
+	    [self configureSearchDataSource];
+	}
